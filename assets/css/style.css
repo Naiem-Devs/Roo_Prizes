@@ -104,6 +104,13 @@ li {
     position: relative;
     z-index: 1;
     text-decoration: none;
+    background: linear-gradient(87.91deg, #E6BE4B 7.59%, #FFAA2B 89.47%);
+    transition: .3s;
+    flex-shrink: 0;
+}
+
+.thm_btn:hover {
+    background: linear-gradient(87.91deg, #FFE599 7.59%, #FFBF5F 89.47%);
 }
 
 .thm_btn span {
@@ -114,10 +121,19 @@ li {
 .thm_btn:before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 101%;
     height: 100%;
-    /* background: green; */
-    border-radius: 30px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg,#EC7F2F,#E7BF4B) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    border-radius: 22px;
+    transition: .3s;
+}
+
+.thm_btn:hover:before {
+    background: linear-gradient(45deg,#E7BF4B,#EC7F2F) border-box;
 }
 
 .thm_btn::after {
@@ -125,11 +141,10 @@ li {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    left: 1%;
+    top: 0;
     z-index: -1;
-    left: 0%;
-    top: 0%;
-    background: linear-gradient(87.91deg, #E6BE4B 7.59%, #FFAA2B 89.47%);
+    border-radius: 30px;
 }
 
 /* default-css END 
@@ -197,10 +212,20 @@ a.link:before {
     width: 100%;
     height: 100%;
     left: -4px;
-    top: 0;
+    top: 0px;
     border-radius: 10px;
     z-index: -1;
     background: linear-gradient(180deg, #31343E 0%, #3E3431 100%);
+    border-bottom-right-radius: 0;
+    transition: .3s;
+}
+
+a.link:hover:before {
+    background: linear-gradient(183deg, #32343D 46%, #ff4855 100%);
+    width: 104%;
+    height: 107%;
+    left: -4px;
+    top: 0px;
 }
 .Logo {margin-left: 90px;margin-right: 50px;}
 
@@ -209,7 +234,11 @@ a.Logo img {
 }
 .REGISTER {
 }
-.SUPPORT_btn {position: absolute;right: 20px;top: 10px;background: linear-gradient(90.82deg, #C74252 -5.07%, #DA5668 81.03%);border-radius: 12px;color: #FFD0D6;font-size: 15px;width: 145px;text-align: center;height: 36px;align-items: center;display: flex;justify-content: center;font-family: 'Jumper PERSONAL';line-height: 1;}
+.SUPPORT_btn {position: absolute;right: 20px;top: 10px;background: linear-gradient(90.82deg, #C74252 -5.07%, #DA5668 81.03%);border-radius: 12px;color: #FFD0D6;font-size: 15px;width: 145px;text-align: center;height: 36px;align-items: center;display: flex;justify-content: center;font-family: 'Jumper PERSONAL';line-height: 1;transition: .3s;}
+
+.SUPPORT_btn:hover {
+    background: linear-gradient(90.82deg, #FF8392 -5.07%, #FE657B 81.03%);
+}
 
 .SUPPORT_btn:after {
     content: "";
@@ -218,8 +247,15 @@ a.Logo img {
     height: 40px;
     border-radius: 12px;
     z-index: -1;
-    background: linear-gradient(90.82deg, #C74252 -5.07%, #DA5668 81.03%);
+    border: 5px solid transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background: linear-gradient(90.63deg, #DA5769 2.99%, #CA4555 95.26%);
+    /* transition: .3s; */
 }
+
+.SUPPORT_btn:hover:after {background: linear-gradient(90.63deg, #FF8191 2.99%, #FFC8CE 95.26%);-webkit-mask: none;-webkit-mask-composite: unset;border: none;}
 
 a.SUPPORT_btn i {
     color: #661C25;
@@ -235,7 +271,7 @@ a.SUPPORT_btn i {
 .bar a {
   width: 35px;
   height: 35px;
-  float: right;
+  float: left;
   position: relative;
 } 
 .bar a span {
@@ -260,7 +296,7 @@ a.SUPPORT_btn i {
   width: 320px;
   height: 100vh;
   background: #ffffff;
-  z-index: 99;
+  z-index: 111;
   box-shadow: 0px 0px 9px -1px #737373;
   top: 0;
   left: 0;
@@ -309,15 +345,40 @@ a.SUPPORT_btn i {
 
 /* ______________hero Area Start_______________ */
 .hero-Area {
-  background-image: url(../img/Citybackground.png);
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.afNone:after,.afNone:before {
+    display: none;
+}
+
+.hero-Area:after {
+    content: "";
+    background: url(../img/Background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-position: center;
+}
+
+section.hero-Area:before {
+    content: "'";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(105.39deg, #202126 11.68%, rgba(32, 33, 38, 0) 25.34%, rgba(32, 33, 38, 0.0853659) 75%, #202126 100.26%);
 }
 .social_link {
     position: absolute;
-    top: 65px;
+    top: -30px;
+    z-index: 99;
 }
 
 .social_link ul {
@@ -329,13 +390,7 @@ a.SUPPORT_btn i {
     margin: 45px 10px;
     text-align: center;
 }
-.container {
-}
-.row {
-}
-.col-lg-12 {
-}
-.DISCOVER-OFFERS {text-align: center;margin-bottom: 50px;letter-spacing: 0.095em;font-size: 25px;margin-top: 130px;text-transform: uppercase;}
+.DISCOVER-OFFERS {text-align: center;margin-bottom: 50px;letter-spacing: 0.095em;font-size: 25px;margin-top: 130px;text-transform: uppercase;position: relative;z-index: 99;}
 
 .DISCOVER-OFFERS.howTo .OFFERS-text {
     width: 350px;
@@ -372,7 +427,7 @@ a.SUPPORT_btn i {
     z-index: 2;
 }
 
-.DISCOVER-OFFERS_wrp {max-width: 930px;margin: auto;margin-top: 50px;}
+.DISCOVER-OFFERS_wrp {max-width: 930px;margin: auto;margin-top: 50px;position: relative;z-index: 99;}
 .col-lg-8 {
 }
 .dic_two .DISCOVER-OFFERS_blk:last-child {
@@ -384,13 +439,17 @@ a.SUPPORT_btn i {
 }
 
 .dic_two {
-    justify-content: ;
     height: 100%;
 }
 
 .DISCOVER-OFFERS_blk i img {
     width: 100%;
     height: 100%;
+    transition: .3s;
+}
+
+.DISCOVER-OFFERS_blk:hover i img {
+    transform: scale(1.02);
 }
 
 .DISCOVER-OFFERS_blk i {
@@ -407,6 +466,7 @@ a.SUPPORT_btn i {
     width: 196px;
     height: 33px;
     line-height: 11px;
+    overflow: hidden;
 }
 
 .DISCOVER-OFFERS_blk i a span {
@@ -423,7 +483,7 @@ a.SUPPORT_btn i {
 }
 .col-lg-4 {
 }
-.register_wrp {display: flex;align-items: center;margin-top: 260px;position: relative;margin-bottom: -55px;z-index: 2;border-bottom-left-radius: 24px;}
+.register_wrp {display: flex;align-items: center;margin-top: 260px;position: relative;margin-bottom: -55px;z-index: 30;border-bottom-left-radius: 24px;}
 
 .bg-border {
     background: linear-gradient(180deg, #2A2D34 0%, #191C23 100%);
@@ -526,11 +586,22 @@ a.SUPPORT_btn i {
 }
 .dice_icon-1 {position: absolute;top: -30px;right: 80px;}
 .dice_icon-2 {position: absolute;top: -125px;right: 0;}
+
+
+.hero_plne_bg {
+}
+
+.hero_plne_bg img {
+    position: absolute;
+}
+.a-plan {right: 198px;z-index: 6;bottom: 18px !important;}
+.b-plan {left: 111px;z-index: 4;bottom: 10px;}
+.c-plan {z-index: 2;bottom: 316px;right: 15px;}
 /* _______________hero Area End______________ */
 
 
 /* ______________offer Area Start_______________ */
-.offer-Area {padding: 200px 0 100px;background: url(../img/Background-Roobet.png);position: relative;z-index: 1;}
+.offer-Area {padding: 200px 0 100px;background: url(../img/Background-Roobet.png);position: relative;z-index: 10;/* overflow: hidden; */}
 
 .red_overly {
     position: relative;
@@ -566,43 +637,78 @@ section.offer-Area .container {
     margin-bottom: 0;
     margin-top: 50px;
 }
-.container {
-}
-.row {
-}
-.col-lg-4 {
-}
-.offset-lg-4 {
-}
+
 .sec_title p {font-size: 14px;letter-spacing: 0.26em;}
 .offer_btn {display: flex;width: 100%;justify-content: end;}
 
 .offer_btn a {
     margin-left: 15px;
 }
-.thm_btn {
-}
-.col-lg-12 {
-}
+
 .offer_card_wrp {display: flex;justify-content: space-between;}
 .offer_card_blk {display: flex;position: relative;margin: 0 0px;border-radius: 20px;}
+
+.offer_card_blk.active:before {
+    right: 9px;
+    width: 100%;
+}
+
+.offer_card_blk.active::after {
+    opacity: 1;
+    width: 99%;
+}
 
 .offer_card_blk.active i a {
     display: none;
 }
 
-.offer_card_blk i img {
+.offer_card_blk i > img {
+    height: 420px;
 }
 
-.border_path {
-    /* -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
-    /* overflow: hidden; */
-    /* border-bottom-left-radius: 22px; */
+.border_path {position: relative;}
+
+.ocb-1::before {background: linear-gradient(21deg, #FFFAE6 -194%, #FF525E 408%);}
+
+.ocb-4::before {background: linear-gradient(180deg, #A746A8 -8.95%, #FD889B 91.05%);}
+
+.ocb-3::before {
+    background: linear-gradient(180deg, #54BFE4 0%, #4ACBEC 100%) !important;
+}
+
+.ocb-2::before {background: linear-gradient(180deg, #FE767F 0%, #FF525E 100%);}
+
+.border_path::before {
+    content: "";
+    /* position: absolute; */
+    width: 92.5%;
+    height: 424px;
+    top: -2px;
+    right: 11px;
+    border-radius: 20px;
+    z-index: 1;
+    border: 3px solid transparent;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    position: absolute;
+    transform: skewX(-3.4deg);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 }
 
 .offer_card_blk:after {
     content: "";
     position: absolute;
+    background: linear-gradient(275.66deg, rgba(0, 0, 0, 0.2) 39.49%, rgba(0, 0, 0, 0) 65.69%), linear-gradient(180deg, #2A2C33 0%, #1A1D24 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transform: skewX(-3.4deg);
+    width: 91.5%;
+    height: 418px;
+    top: 1px;
+    right: 14px;
+    z-index: -1;
+    opacity: 0;
 }
 
 .offer_card_blk i a {
@@ -613,12 +719,24 @@ section.offer-Area .container {
     font-size: 14px;
 }
 
+a.info {
+    z-index: 99;
+    right: 10px;
+    top: 15px;
+    left: auto !important;
+    transform: unset;
+    display: block !important;
+}
+
 .offer_card_blk i {
     display: block;
     position: relative;
     margin-bottom: -2px;
 }
-.offer_card_text {
+.offer_card_text {display: none;}
+
+.active .offer_card_text {
+    display: block;
 }
 
 .offer_card_text h2 {
@@ -647,24 +765,15 @@ section.offer-Area .container {
     position: absolute;
     bottom: 0;
 }
-.oc_btn-1 {
-}
-.oc_btn-2 {
-}
-.oc_btn-3 {
-}
-.active {
-}
 
-.offer_card_text.active {
-    position: absolute;
-    max-width: 260px;
+
+.offer_card_text {
+    max-width: 286px;
     z-index: 9;
-    top: 30px;
-    left: 65px;
+    transform: translate(40px, 25px);
+    padding-right: 40px;
 }
 
-.offer_card_text.active i img {}
 
 .offer_card_text.active i img {
     width: 100%;
@@ -682,7 +791,26 @@ section.offer-Area .container {
 .offer_coin {text-align: right;position: relative;z-index: 0;width: 100%;height: 170px;}
 .offer_coin-1 {position: absolute;right: 30px;z-index: 1;top: 15px;}
 .offer_coin-2 {position: absolute;right: -30px;}
-.Roulette {position: absolute;z-index: -2;bottom: -159px;left: 50px;}
+.Roulette {position: absolute;z-index: -3;bottom: -140px;left: 50px;}
+
+.corner_bdr {
+}
+
+.corner_bdr span {
+    position: absolute;
+    background: linear-gradient(180deg, #E6BE4B 0%, #FFE59B 100%);
+    border-radius: 28px;
+    width: 98.25px;
+    height: 51.42px;
+    z-index: -1;
+}
+.corner_left {bottom: -8px;transform: skewX(-10deg);left: -3px;}
+
+.active span.corner_left {
+    left: auto;
+    right: 87%;
+}
+.corner_right {right: -3px;top: -4px;transform: skewX(-20deg);width: 70px !important;}
 /* _______________offer Area End______________ */
 
 
@@ -692,7 +820,7 @@ section.offer-Area .container {
 /*============ Page Start =============*/
 .body_bg{position: absolute;bottom: 110px;width: 100%;z-index: -10;}
 section.register-Area{
-    padding: 110px 0 250px;
+    padding: 90px 0 250px;
 }
 
 section.register-Area .Roulette {
@@ -826,9 +954,9 @@ img.dice_22 {
 /*============footer Page End =============*/
 footer.footer_area{
     position: relative;
-    z-index: 2;
     background: #16161A;
     padding: 20px 50px 30px;
+    z-index: 99;
 }
 
 footer.footer_area .row {

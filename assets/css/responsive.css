@@ -1,27 +1,517 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+    .offer_card_wrp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .offer_card_blk {
+        margin: 30px;
+        width: max-content;
+    }
+    .register_wrp i img {
+        max-width: 460px;
+    }
+    
+    .dice_icon-1 {
+        width: 184px;
+        right: 50px;
+    }
+    
+    .dice_icon-2 {
+        width: 126px;
+    }
+    
+    .register_text {
+        margin-left: 61px;
+    }
+    
+    .register_wrp > i {
+    }
+    
+    .bg-border {
+        max-width: 95%;
+    }
+    
+    img.b-plan {
+        left: 0;
+    }
+    
+    img.offer_coin-2 {
+        right: 0;
+    }
+    
+    .offer-Area .sec_title p {
+        max-width: 500px;
+    }
+    .offer-Area {
+        background-size: cover;
+    }
 
+    /* ----------------------- */
+    img.coins4 {
+        display: none;
+    }
+    
+    img.dice_11 {
+        display: none;
+    }
+    
+    img.dice_6 {
+        display: none;
+    }
 
 }
 
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+    .offer_card_wrp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .offer_card_blk {
+        margin: 20px;
+        width: max-content;
+    }
+    .register_wrp i img {
+        max-width: 460px;
+    }
+    
+    .dice_icon-1 {
+        width: 184px;
+        right: 50px;
+    }
+    
+    .dice_icon-2 {
+        width: 126px;
+    }
+    
+    .register_text {
+        margin-left: 35px;
+    }
+    
+    
+    .bg-border {
+        max-width: 95%;
+    }
+    
+    img.b-plan {
+        left: 0;
+        display: none;
+    }
+    
+    img.offer_coin-2 {
+        right: 0;
+    }
+    
+    .offer-Area .sec_title p {
+        max-width: 500px;
+    }
+    .offer-Area {
+        background-size: cover;
+    }
+    .dice_icon {
+        display: none;
+    }
+    
+    a.SUPPORT_btn {
+        display: none;
+    }
+    
+    .DISCOVER-OFFERS_blk {
+        text-align: center;
+    }
+    
+    .offer_btn {
+        display: none;
+    }
 
+    /* ----------------------- */
+    img.coins4 {
+        display: none;
+    }
+    
+    img.dice_11 {
+        display: none;
+    }
+    
+    img.dice_6 {
+        display: none;
+    }
 
+    img.cs-2 {
+        width: 100%;
+    }
+    img.coins5 {
+        display: none;
+    }
 }
 
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .offer_card_wrp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .offer_card_blk {
+        margin: 20px;
+        width: max-content;
+    }
+    .register_wrp i img {
+        max-width: 460px;
+    }
+    
+    .dice_icon-1 {
+        width: 184px;
+        right: 50px;
+    }
+    
+    .dice_icon-2 {
+        width: 126px;
+    }
+    
+    .register_text {
+        margin-left: 35px;
+        padding: 0 0 30px;
+    }
+    
+    
+    .bg-border {
+        max-width: 95%;
+    }
 
+.register_wrp {
+    flex-direction: column;
+    margin-top: 140px;
+}
+    
+    img.b-plan {
+        left: 0;
+        display: none;
+    }
+    
+    img.offer_coin-2 {
+        right: 0;
+    }
+    
+    .offer-Area .sec_title p {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .offer-Area {
+        background-size: cover;
+    }
+    .dice_icon {
+        display: none;
+    }
+    
+    a.SUPPORT_btn {
+        display: none;
+    }
+    
+    .DISCOVER-OFFERS_blk {
+        text-align: center;
+    }
+    
+    .offer_btn {
+        display: none;
+    }
+    a.link {
+        display: none;
+    }
+    .Logo{
+    margin: 0;
+}
+.menu-area {
+    justify-content: center;
+}
+
+    /* ----------------------- */
+    img.coins4 {
+        display: none;
+    }
+    
+    img.dice_11 {
+        display: none;
+    }
+    
+    img.dice_6 {
+        display: none;
+    }
+
+    img.cs-2 {
+        width: 100%;
+    }
+    img.coins5 {
+        display: none;
+    }
+    .cs_blk_content {
+        flex-direction: column;
+    }
+    
+    img.cs-4 {
+        width: 100%;
+    }
+    
+    .cs_blk_content > i {
+        margin-bottom: 30px;
+    }
+    
+    .left .cs_blk_content {
+        flex-direction: column-reverse;
+    }
+    
+    .cs_blk.bg-border {
+        max-width: 80%;
+    }
+    .header-area::after {
+        display: none;
+    }
+    section.register-Area {
+        padding-top: 10px;
+    }
 
 }
 
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    .header-area::after {
+        display: none;
+    }
+    .offer_card_wrp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .offer_card_blk {
+        margin: 20px;
+        width: max-content;
+    }
+    .register_wrp i img {
+        max-width: 336px;
+    }
+    
+    .dice_icon-1 {
+        width: 184px;
+        right: 50px;
+    }
+    
+    .dice_icon-2 {
+        width: 126px;
+    }
+    
+    .register_text {
+        margin-left: 35px;
+        padding: 0 0 30px;
+    }
+    
+    
+    .bg-border {
+        max-width: 95%;
+    }
 
+.register_wrp {
+    flex-direction: column;
+    margin-top: 140px;
+}
+    
+    img.b-plan {
+        left: 0;
+        display: none;
+    }
+    
+    img.offer_coin-2 {
+        right: 0;
+    }
+    
+    .offer-Area .sec_title p {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .offer-Area {
+        background-size: cover;
+        padding-top: 130px;
+    }
+    .dice_icon {
+        display: none;
+    }
+    
+    a.SUPPORT_btn {
+        display: none;
+    }
+    
+    .DISCOVER-OFFERS_blk {
+        text-align: center;
+    }
+    
+    .offer_btn {
+        display: none;
+    }
+    a.link {
+        display: none;
+    }
+    .Logo{
+    margin: 0;
+}
+
+a.Logo img {
+    width: 140px;
+}
+.menu-area {
+    justify-content: center;
+}
+.social_link {
+    display: none;
+}
+
+.register_wrp > i {
+    margin-left: auto;
+}
+
+.active .offer_card_text {display: none;}
+
+.offer_card_blk.active::after {
+}
+
+.offer_card_blk.active:before {
+    width: 93%;
+}
+
+.offer_coin {
+    display: none;
+}
+
+img.Roulette {
+    width: 199px;
+    bottom: -90px;
+}
+
+.footer_btm {
+    text-align: center;
+}
+
+footer.footer_area {
+    padding: 20px;
+    text-align: center;
+}
+
+.f-logo img {
+    margin: auto;
+    max-width: 198px;
+    display: block;
+}
+footer.footer_area hr {
+    /* margin-top: 0; */
+}
+.sec_title h2 {
+    font-size: 38px;
+}
+
+.sec_title span {
+    font-size: 24px;
+}
+
+.register_text .sec_title span {
+    margin-left: 100px;
+    line-height: 33px;
+}
+
+.register_text p {
+    margin-top: 30px;
+}
+.DISCOVER-OFFERS {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+
+    /* ----------------------- */
+    img.coins4 {
+        display: none;
+    }
+    
+    img.dice_11 {
+        display: none;
+    }
+    
+    img.dice_6 {
+        display: none;
+    }
+
+    img.cs-2 {
+        width: 100%;
+    }
+    img.coins5 {
+        display: none;
+    }
+    .cs_blk_content {
+        flex-direction: column;
+    }
+    
+    img.cs-4 {
+        width: 100%;
+    }
+    
+    .cs_blk_content > i {
+        margin-bottom: 30px;
+    }
+
+i.cs_blk_three {
+    margin-left: unset;
+}
+
+.cs_blk_content > i img {
+    max-width: 322px;
+    width: 100%;
+}
+    
+    .left .cs_blk_content {
+        flex-direction: column-reverse;
+    }
+    
+    .cs_blk.bg-border {
+        max-width: 95%;
+        padding: 25px;
+    }
+    .header-area::after {
+        display: none;
+    }
+    section.register-Area {
+        padding-top: 10px;
+        padding-bottom: 132px;
+    }
+    .right .cs_blk_text {
+        margin-left: 10px;
+    }
+    
+    .cs_blk_text h4 {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    
+    .cs_blk_text p {
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    .left .cs_blk_text {
+        margin-right: 10px;
+    }
+    
+    .cs_blk_text h5 {
+        margin-bottom: 20px;
+    }
+    
+    img.dice_22 {
+        display: none;
+    }
  
 }
  
