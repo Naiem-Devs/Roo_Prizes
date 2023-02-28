@@ -26,8 +26,7 @@
         margin-left: 61px;
     }
     
-    .register_wrp > i {
-    }
+
     
     .bg-border {
         max-width: 95%;
@@ -377,9 +376,6 @@ a.Logo img {
 
 .active .offer_card_text {display: none;}
 
-.offer_card_blk.active::after {
-}
-
 .offer_card_blk.active:before {
     width: 93%;
 }
@@ -407,9 +403,7 @@ footer.footer_area {
     max-width: 198px;
     display: block;
 }
-footer.footer_area hr {
-    /* margin-top: 0; */
-}
+
 .sec_title h2 {
     font-size: 38px;
 }

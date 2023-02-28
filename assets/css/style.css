@@ -163,37 +163,9 @@ li {
     z-index: -2;
     border-bottom: 4px solid #323034;
 }
-.container {
-}
-.row {
-}
-.align-items-center {
-}
-.col-6 {
-}
-.d-block {
-}
-.d-lg-none {
-}
-.text-center {
-}
-.bar {
-}
-.bar-icon {
-}
-.siteBar-btn {
-}
-.col-lg-12 {
-}
-.d-none {
-}
-.d-lg-block {
-}
-.text-right {
-}
+
 .menu-area {display: flex;justify-content: center;padding-top: 10px;}
-.home {
-}
+
 a.link {background: #202126;width: 180px;height: 52px;display: flex;align-items: center;justify-content: center;border-radius: 10px;position: relative;font-size: 17px;flex-wrap: wrap;line-height: 1;letter-spacing: 0.15em;border-bottom-right-radius: 0;}
 
 a.link span {
@@ -232,8 +204,7 @@ a.link:hover:before {
 a.Logo img {
     width: 210px;
 }
-.REGISTER {
-}
+
 .SUPPORT_btn {position: absolute;right: 20px;top: 10px;background: linear-gradient(90.82deg, #C74252 -5.07%, #DA5668 81.03%);border-radius: 12px;color: #FFD0D6;font-size: 15px;width: 145px;text-align: center;height: 36px;align-items: center;display: flex;justify-content: center;font-family: 'Jumper PERSONAL';line-height: 1;transition: .3s;}
 
 .SUPPORT_btn:hover {
@@ -261,11 +232,6 @@ a.SUPPORT_btn i {
     color: #661C25;
     margin-right: 10px;
 }
-.fab {
-}
-.fa-twitter {
-}
-.menu-area{}
 
 /* humbergar */
 .bar a {
@@ -428,8 +394,7 @@ section.hero-Area:before {
 }
 
 .DISCOVER-OFFERS_wrp {max-width: 930px;margin: auto;margin-top: 50px;position: relative;z-index: 99;}
-.col-lg-8 {
-}
+
 .dic_two .DISCOVER-OFFERS_blk:last-child {
     margin-top: 39px;
 }
@@ -474,15 +439,13 @@ section.hero-Area:before {
 }
 
 .dic_two .DISCOVER-OFFERS_blk i a {width: 115px;height: 24px;font-size: 10px;bottom: 15px;}
-.thm_btn {
-}
+
 .off_btn-2:after {background: linear-gradient(87.91deg, #FF5662 7.59%, #F75D68 89.47%);}
 
 .off_btn-3:after {
     background: linear-gradient(87.91deg, #50C2E9 7.59%, #8BEDFD 89.47%);
 }
-.col-lg-4 {
-}
+
 .register_wrp {display: flex;align-items: center;margin-top: 260px;position: relative;margin-bottom: -55px;z-index: 30;border-bottom-left-radius: 24px;}
 
 .bg-border {
@@ -580,16 +543,9 @@ section.hero-Area:before {
 .register_text a span {
     height: 15px;
 }
-.sec_title {
-}
-.dice_icon {
-}
 .dice_icon-1 {position: absolute;top: -30px;right: 80px;}
 .dice_icon-2 {position: absolute;top: -125px;right: 0;}
 
-
-.hero_plne_bg {
-}
 
 .hero_plne_bg img {
     position: absolute;
@@ -779,22 +735,18 @@ a.info {
     width: 100%;
 }
 .off_p-1 {margin-left: -10px;}
-.ab {
-}
+
 .bc {color: #F8BA38;font-weight: 600;}
 .cd {color: #FFEE55;font-weight: 700;}
 .de {color: #FF91FF;font-weight: 600;}
 .off_p-2 {margin-left: -18px;}
 .off_p-3 {margin-left: -25px;}
-.oc_btn-4 {
-}
+
 .offer_coin {text-align: right;position: relative;z-index: 0;width: 100%;height: 170px;}
 .offer_coin-1 {position: absolute;right: 30px;z-index: 1;top: 15px;}
 .offer_coin-2 {position: absolute;right: -30px;}
 .Roulette {position: absolute;z-index: -3;bottom: -140px;left: 50px;}
 
-.corner_bdr {
-}
 
 .corner_bdr span {
     position: absolute;
@@ -823,8 +775,6 @@ section.register-Area{
     padding: 90px 0 250px;
 }
 
-section.register-Area .Roulette {
-}
 .cs_blk_content {
   display: flex;
 }
@@ -884,13 +834,7 @@ img.dice_22 {
     position: absolute;
     right: 39px;
 }
-.bg-border {
-}
-.right {
-}
 .bg-border.left .cs_blk_content {text-align: right;justify-content: end;}
-.cs_blk_text {
-}
 
 .left .cs_blk_text {margin-right: 50px;}
 
@@ -942,11 +886,6 @@ img.dice_22 {
     margin-bottom: 50px;
 }
 
-.cs_blk_text p {}
-.thm_btn {
-}
-.left {
-}
 /*============ Page End =============*/
 
 
@@ -970,10 +909,7 @@ footer.footer_area hr {
     margin: 30px 0 20px;
     margin-left: auto;
 }
-.footer_area {
-}
-.f-logo {
-}
+
 
 .f-logo img {
     max-width: 240px;
@@ -994,8 +930,6 @@ footer.footer_area hr {
     margin: 0 5px;
 }
 
-.footer_btm {
-}
 
 .footer_btm p {
     max-width: 800px;

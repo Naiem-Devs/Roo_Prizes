@@ -7,29 +7,33 @@
   }); 
 
 
-  // owlCarousel
-  $(".brand-active").owlCarousel({
-    loop: true,
-    margin: 30,
-    items: 6,
-    navText: [
-      '<i class="fa fa-angle-left"></i>',
-      '<i class="fa fa-angle-right"></i>'
-    ],
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 2
-      },
-      767: {
-        items: 3
-      },
-      992: {
-        items: 6
-      }
-    }
-  });
-
+  const mediaQuery = window.matchMedia('(min-width: 768px)')
+  const mediaQueryTwo = window.matchMedia('(max-width: 767px)')
+  const clActive = document.querySelectorAll('.offer_card_blk')
+  
+  if (mediaQueryTwo.matches) {
+      clActive.forEach(clActives => {
+          clActives.classList.remove('active')
+      })
+  }
+  
+  
+  if (mediaQuery.matches) {
+      var btn = document.querySelectorAll('.info')
+          var item = document.querySelectorAll('.offer_card_texts')
+  
+          btn.forEach(btns => {
+              btns.addEventListener('click', (e) => {
+                  e.preventDefault()
+                  oldremove()
+                  btns.parentElement.parentElement.classList.add('active')
+              })
+          })
+          function oldremove() {
+              btn.forEach(btns => {
+                  btns.parentElement.parentElement.classList.remove('active')
+              })
+          }
+  }
  
 })(jQuery);
